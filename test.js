@@ -52,6 +52,7 @@ var getMaxIndexDiff = function (A) {
     return maxDiff;
 };
 
+// https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/
 var getLongestPrefix = function (arr) {
     let pref = '', shortestStr = '', char = '';
     let i = 0, j = 0;
@@ -120,6 +121,7 @@ var getMaxValueRemovedChar = function (removeChar = '5', N) {
     return maxValue;
 };
 
+// https://app.codility.com/programmers/trainings/9/binary_gap/
 var getMaxZeroBit = function (N) {
     //var N = 1041;
     var bitVal = 0, val = 0, index = 0, maxCount = 0, count = 0;
@@ -157,6 +159,7 @@ var getMaxStringOrderedAlphabetically = function (S) {
     return maxIndex == -1 ? outputStr : outputStr + S[S.length-1];
 };
 
+// https://coderbyte.com/algorithm/stock-maximum-profit
 var getMaxProfit= function (arr) {
     //var arr = [45, 24, 35, 31, 40, 38, 11];//.sort(function(a,b) { return b-a;});
     var changeBuyIndex = true;
@@ -175,7 +178,6 @@ var getMaxProfit= function (arr) {
     return maxProfit;
 };
 
-
 /*
 var getReferrersTest = [
     { id: 0, referrerId: null, name: "Tess" },
@@ -192,5 +194,5 @@ console.log(JSON.stringify(getReferrers(getReferrersTest)));
 console.log(JSON.stringify(test));
 console.log(getMaxPalindrome('12345'));
 console.log(getMaxIndexDiff([1, 2, 3]));
-*/
 console.log(getLongestPrefix(["flow", "flower", "flight"]));
+*/
